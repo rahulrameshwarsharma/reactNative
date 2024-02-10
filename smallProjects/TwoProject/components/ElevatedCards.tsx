@@ -6,7 +6,7 @@ import globalStyles from '../src/styles/style.tsx';
 export default function ElevatedCards(): JSX.Element {
   return (
     <View>
-      <Text style={styles.headingText}> Elevated Cards </Text>
+      <Text style={globalStyles.headingText}> Elevated Cards </Text>
       <ScrollView horizontal={true} style={styles.container}>
         <View style={[styles.card, styles.cardElevated]}>
           <Text style={[globalStyles.redText]}>Tap</Text>
@@ -32,12 +32,6 @@ export default function ElevatedCards(): JSX.Element {
 }
 
 const styles = StyleSheet.create({
-  headingText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    borderRadius: 4,
-    paddingHorizontal: 8,
-  },
   container: {
     padding: 8,
   },

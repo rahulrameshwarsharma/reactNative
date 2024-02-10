@@ -1,7 +1,17 @@
 import {StyleSheet} from 'react-native';
 
 const globalStyles = StyleSheet.create({
+  // For headings or subheadings
+
+  headingText: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    paddingHorizontal: 8,
+    margin: 8
+  },
+
   // For any text in different colors
+
   redText: {
     color: '#EF5354',
   },
@@ -14,7 +24,10 @@ const globalStyles = StyleSheet.create({
   purpleText: {
     color: '#333333'
   },
-  
+  blackText: {
+    color: '#000000'
+  },
+
   // For any box with background color
 
   lightGrey: {

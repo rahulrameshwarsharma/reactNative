@@ -1,10 +1,12 @@
 import React from 'react';
 import {View, Text, StyleSheet, ScrollView} from 'react-native';
 
+import globalStyles from '../src/styles/style.tsx'
+
 export default function FlatCards(): JSX.Element {
   return (
     <View>
-      <Text style={styles.headingText}>FlatLists</Text>
+      <Text style={globalStyles.headingText}>FlatLists</Text>
       <ScrollView>
         <View style={styles.container}>
           <View style={[styles.cards, styles.cardOne]}>
@@ -29,11 +31,6 @@ export default function FlatCards(): JSX.Element {
 }
 
 const styles = StyleSheet.create({
-  headingText: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    paddingHorizontal: 8,
-  },
   container: {
     flex: 1,
     flexDirection: 'row',
